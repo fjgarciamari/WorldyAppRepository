@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C74DD9B60B52ECDC68C5A5E9 /* libPods-WorldyApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00708FC1BA62D977A9E3D3C0 /* libPods-WorldyApp.a */; };
+		DBEB5D8D2030BF4D00710F68 /* TabMapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DBEB5D8C2030BF4D00710F68 /* TabMapVC.m */; };
 		FBC97481202DA56600FDF19D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC97480202DA56600FDF19D /* AppDelegate.m */; };
 		FBC97484202DA56600FDF19D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBC97483202DA56600FDF19D /* ViewController.m */; };
 		FBC97487202DA56600FDF19D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBC97485202DA56600FDF19D /* Main.storyboard */; };
@@ -35,6 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		00708FC1BA62D977A9E3D3C0 /* libPods-WorldyApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorldyApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B247B2298639369999036060 /* Pods-WorldyApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldyApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WorldyApp/Pods-WorldyApp.debug.xcconfig"; sourceTree = "<group>"; };
+		C4C1277A8F5A31DB37DACF1B /* Pods-WorldyApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldyApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-WorldyApp/Pods-WorldyApp.release.xcconfig"; sourceTree = "<group>"; };
+		DBEB5D8B2030BF4D00710F68 /* TabMapVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabMapVC.h; sourceTree = "<group>"; };
+		DBEB5D8C2030BF4D00710F68 /* TabMapVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabMapVC.m; sourceTree = "<group>"; };
 		FBC9747C202DA56600FDF19D /* WorldyApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldyApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBC9747F202DA56600FDF19D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBC97480202DA56600FDF19D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -58,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74DD9B60B52ECDC68C5A5E9 /* libPods-WorldyApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		24F374D4753770311BCD0104 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00708FC1BA62D977A9E3D3C0 /* libPods-WorldyApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		805906169A57E9AECEBE36C1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B247B2298639369999036060 /* Pods-WorldyApp.debug.xcconfig */,
+				C4C1277A8F5A31DB37DACF1B /* Pods-WorldyApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FBC97473202DA56600FDF19D = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +110,8 @@
 				FBC97497202DA56600FDF19D /* WorldyAppTests */,
 				FBC974A2202DA56700FDF19D /* WorldyAppUITests */,
 				FBC9747D202DA56600FDF19D /* Products */,
+				805906169A57E9AECEBE36C1 /* Pods */,
+				24F374D4753770311BCD0104 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,6 +133,8 @@
 				FBC97482202DA56600FDF19D /* ViewController.h */,
 				FBC97483202DA56600FDF19D /* ViewController.m */,
 				FBC97485202DA56600FDF19D /* Main.storyboard */,
+				DBEB5D8B2030BF4D00710F68 /* TabMapVC.h */,
+				DBEB5D8C2030BF4D00710F68 /* TabMapVC.m */,
 				FBC97488202DA56600FDF19D /* Assets.xcassets */,
 				FBC9748A202DA56600FDF19D /* LaunchScreen.storyboard */,
 				FBC9748D202DA56600FDF19D /* Info.plist */,
@@ -139,9 +168,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBC974A8202DA56700FDF19D /* Build configuration list for PBXNativeTarget "WorldyApp" */;
 			buildPhases = (
+				93889F5519A12637E04A0E1C /* [CP] Check Pods Manifest.lock */,
 				FBC97478202DA56600FDF19D /* Sources */,
 				FBC97479202DA56600FDF19D /* Frameworks */,
 				FBC9747A202DA56600FDF19D /* Resources */,
+				F09E43AB6022CB5A741F9779 /* [CP] Embed Pods Frameworks */,
+				FE88A50EBF2B246043B7BB7B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -260,6 +292,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		93889F5519A12637E04A0E1C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorldyApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F09E43AB6022CB5A741F9779 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldyApp/Pods-WorldyApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE88A50EBF2B246043B7BB7B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-WorldyApp/Pods-WorldyApp-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WorldyApp/Pods-WorldyApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FBC97478202DA56600FDF19D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -268,6 +356,7 @@
 				FBC97484202DA56600FDF19D /* ViewController.m in Sources */,
 				FBC9748F202DA56600FDF19D /* main.m in Sources */,
 				FBC97481202DA56600FDF19D /* AppDelegate.m in Sources */,
+				DBEB5D8D2030BF4D00710F68 /* TabMapVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,10 +517,11 @@
 		};
 		FBC974A9202DA56700FDF19D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B247B2298639369999036060 /* Pods-WorldyApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62MUT4523V;
+				DEVELOPMENT_TEAM = 3XJTNRWF5W;
 				INFOPLIST_FILE = WorldyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cesar.WorldyApp;
@@ -442,10 +532,11 @@
 		};
 		FBC974AA202DA56700FDF19D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4C1277A8F5A31DB37DACF1B /* Pods-WorldyApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 62MUT4523V;
+				DEVELOPMENT_TEAM = 3XJTNRWF5W;
 				INFOPLIST_FILE = WorldyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cesar.WorldyApp;

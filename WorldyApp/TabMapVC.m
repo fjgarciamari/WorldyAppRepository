@@ -1,24 +1,25 @@
 //
-//  ViewController.m
+//  TabMapVC.m
 //  WorldyApp
 //
-//  Created by alumno on 9/2/18.
+//  Created by Cesar on 11/02/2018.
 //  Copyright © 2018 cesar. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TabMapVC.h"
 #import <GoogleMaps/GoogleMaps.h>
 
-@interface ViewController ()
+
+@interface TabMapVC ()
 
 @end
 
-@implementation ViewController
+@implementation TabMapVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+    // Do any additional setup after loading the view.
+        
     // Create a GMSCameraPosition that tells the map to display the
     // coordinate -33.86,151.20 at zoom level 6.
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude:-33.86
@@ -34,15 +35,23 @@
     marker.title = @"Sydney";
     marker.snippet = @"Australia";
     marker.map = mapView;
-
+    
     
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
